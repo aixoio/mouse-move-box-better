@@ -22,8 +22,6 @@ document.body.onmousemove = function (event) {
   draw();
 };
 document.body.onmousedown = function (event) {
-  // if (color > colors.length - 1) color = 0
-
   boxs.push({
     x: event.clientX,
     y: event.clientY,
@@ -31,7 +29,6 @@ document.body.onmousedown = function (event) {
     height: 100,
     color: colors[color],
   });
-  // color++
 };
 document.onkeydown = function (event) {
   if (event.keyCode == 82) {
